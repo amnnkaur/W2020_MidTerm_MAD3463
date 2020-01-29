@@ -58,12 +58,13 @@ public class LambtonStringTools
 
         newString = newString.toLowerCase();
 
+        if (originalString.contains(findString)) {
 
-            newString = originalString.replace(findString,newString);
+            originalString = originalString.replace(findString, newString);
+
+        }
 
 
-
-
-        return newString;
+        return originalString;
     }
 }
