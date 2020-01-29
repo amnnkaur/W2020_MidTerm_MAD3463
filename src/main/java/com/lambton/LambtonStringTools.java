@@ -15,12 +15,14 @@ public class LambtonStringTools
     public static String reverse(String s)
     {
         char ch[] = s.toCharArray();
-        String rev = ""; 
+        String rev = "";
 
+        for (int i = ch.length - 1; i >= 0; i--)
+        {
+            rev += ch[i];
+        }
 
-
-
-        return null;
+        return rev;
     }
     
     //2 - FORMAT INITIALS OF STRING
