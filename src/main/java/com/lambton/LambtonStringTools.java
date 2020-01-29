@@ -19,10 +19,10 @@ public class LambtonStringTools
 
         for (int i = ch.length - 1; i >= 0; i--)
         {
-            rev += ch[i];
+            rev =rev + ch[i];
         }
 
-        return rev;
+        return rev ;
     }
     
     //2 - FORMAT INITIALS OF STRING
@@ -62,6 +62,10 @@ public class LambtonStringTools
 
             originalString = originalString.replace(findString, newString);
 
+        }
+
+        else {
+            System.out.println("The orignal String does not contain new String ");
         }
 
 
