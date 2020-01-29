@@ -27,7 +27,7 @@ public class C0782918Main {
             System.out.println("Output : " + rev);
         }
         
-        System.out.println("\n--- Init");
+       System.out.println("\n--- Init");
         String init = LambtonStringTools.initials("pritesh kumar pAtEl");
         System.out.println("Input  : pritesh kumar pAtEl");
         System.out.println("Output : " + init);
