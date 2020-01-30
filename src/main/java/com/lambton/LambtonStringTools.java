@@ -14,17 +14,26 @@ public class LambtonStringTools
     //1 - REVERSE STRING
     public static String reverse(String s)
     {
-        char ch[] = s.toCharArray();
+        String[] words =s.split(" ");
         String rev = "";
 
-        for (int i = ch.length - 1; i >= 0; i--)
-        {
-            rev =rev + ch[i];
+        for(int j=0; j<words.length;j++){
+
+            String word = words[j];
+            String reverseWord = "";
+
+            for (int i = word.length()- 1; i >= 0; j--)
+            {
+                reverseWord =reverseWord + word.charAt(i);
+            }
+            
+            rev = rev + reverseWord + " ";
         }
 
         return rev ;
     }
-    
+
+
     //2 - FORMAT INITIALS OF STRING
     public static String initials(String s) 
     {
