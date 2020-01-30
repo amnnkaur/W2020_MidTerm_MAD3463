@@ -35,9 +35,7 @@ public class LambtonStringTools
 
         if (words.length == 3) {
 
-            init = words[0].substring(0, 1).toUpperCase()
-                    + ". " +words[1].substring(0, 1).toUpperCase()
-                    + "." + words[2].substring(0, 1).toUpperCase()
+            init = words[0].substring(0, 1).toUpperCase() + ". " +words[1].substring(0, 1).toUpperCase() + "." + words[2].substring(0, 1).toUpperCase()
                     + words[2].substring(1).toLowerCase();
 
         } else {
