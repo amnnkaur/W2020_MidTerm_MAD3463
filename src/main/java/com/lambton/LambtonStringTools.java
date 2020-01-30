@@ -86,7 +86,7 @@ public class LambtonStringTools
 
         }
 
-        return (char)mostFrequent;
+        
 
     }
     
