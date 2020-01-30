@@ -29,13 +29,20 @@ public class LambtonStringTools
     public static String initials(String s) 
     {
 
-        return null;
+        String[] words = s.split("\\s+");
+
+        String init = "";
+
+       
+        return init;
     }
         
     //3 - FIND MOST FREQUENT CHARACTER FROM STRING
     public static String mostFrequent(String s) 
     {
-        return null;
+
+
+            return null;
     }
     
     //4 - CONVERT BINARY NUMBER TO DECIMALS
@@ -65,7 +72,7 @@ public class LambtonStringTools
         }
 
         else {
-            System.out.println("The orignal String does not contain new String ");
+            System.out.println("The original String does not contain new String ");
         }
 
 
