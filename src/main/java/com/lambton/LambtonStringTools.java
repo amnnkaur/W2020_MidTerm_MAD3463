@@ -42,7 +42,7 @@ public class LambtonStringTools
 
         } else {
 
-            System.out.println("Output is null");
+            init = null;
 
         }
 
