@@ -22,11 +22,11 @@ public class LambtonStringTools
             String word = words[j];
             String reverseWord = "";
 
-            for (int i = word.length()- 1; i >= 0; j--)
+            for (int i = word.length()- 1; i >= 0; i--)
             {
                 reverseWord =reverseWord + word.charAt(i);
             }
-            
+
             rev = rev + reverseWord + " ";
         }
 
@@ -57,11 +57,35 @@ public class LambtonStringTools
     }
         
     //3 - FIND MOST FREQUENT CHARACTER FROM STRING
-    public static String mostFrequent(String s) 
+    public static char mostFrequent(String s)
     {
 
+        int[] count = new int[256];
 
-            return null;
+        int i;
+
+        for (i = 0; i < s.length(); i++)
+
+            (count[s.charAt(i)])++;
+
+        int mostFrequent = 0;
+
+        for (i = 0; i < 256; i++) {
+
+            if (count[i] > count[mostFrequent]) {
+
+                mostFrequent = i;
+
+            } else if (count[i] == count[mostFrequent]) {
+
+                mostFrequent = i;
+
+            }
+
+        }
+
+        return (char)mostFrequent;
+
     }
     
     //4 - CONVERT BINARY NUMBER TO DECIMALS
