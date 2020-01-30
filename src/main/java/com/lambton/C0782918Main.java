@@ -44,6 +44,9 @@ public class C0782918Main {
         mostFrequent = LambtonStringTools.mostFrequent("aassrrttggg desf tersgdv");
         System.out.println("Input  : aassrrttggg desf tersgdv");
         System.out.println("Output : " + mostFrequent);
+        /*mostFrequent = LambtonStringTools.mostFrequent("amanpreet kaur");
+        System.out.println("Input  : amanpreet kaur");
+        System.out.println("Output : " + mostFrequent);*/
         
         System.out.println("\n--- Replace SubString");
         String newString = LambtonStringTools.replaceSubString("Lambton College in Toronto", "College", "University");
