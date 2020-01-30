@@ -17,14 +17,14 @@ public class LambtonStringTools
         String[] words =s.split(" ");
         String rev = "";
 
-        for(int j=0; j<words.length;j++){
+        for (int i = words.length- 1; i >= 0; i--){
 
-            String word = words[j];
+            String word = words[i];
             String reverseWord = "";
 
-            for (int i = word.length()- 1; i >= 0; i--)
+            for(int j=0; j<word.length();j++)
             {
-                reverseWord =reverseWord + word.charAt(i);
+                reverseWord =reverseWord + word.charAt(j);
             }
 
             rev = rev + reverseWord + " ";
