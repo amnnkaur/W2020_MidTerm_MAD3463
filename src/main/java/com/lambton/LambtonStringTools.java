@@ -39,14 +39,14 @@ public class LambtonStringTools
     public static String initials(String s) 
     {
 
-        String[] words1 = s.split("\\s+");
+        String[] words = s.split("\\s+");
 
         String init = "";
 
-        if (words1.length == 3) {
+        if (words.length == 3) {
 
-            init = words1[0].substring(0, 1).toUpperCase() + ". " +words1[1].substring(0, 1).toUpperCase() + "." + words1[2].substring(0, 1).toUpperCase()
-                    + words1[2].substring(1).toLowerCase();
+            init = words[0].substring(0, 1).toUpperCase() + ". " +words[1].substring(0, 1).toUpperCase() + "." + words[2].substring(0, 1).toUpperCase()
+                    + words[2].substring(1).toLowerCase();
 
         } else {
 
