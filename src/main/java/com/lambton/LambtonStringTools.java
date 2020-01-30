@@ -48,12 +48,7 @@ public class LambtonStringTools
             init = words[0].substring(0, 1).toUpperCase() + ". " +words[1].substring(0, 1).toUpperCase() + "." + words[2].substring(0, 1).toUpperCase()
                     + words[2].substring(1).toLowerCase();
 
-        } else {
-
-            init = null;
-
-        }
-
+        } 
         return init;
     }
         
